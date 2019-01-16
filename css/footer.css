@@ -1,0 +1,104 @@
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+  background-color: #000;
+}
+
+  .content-footer {
+    width: 100%;
+    max-width: 1112px;
+    box-sizing: border-box; 
+  }
+
+  .content-footer + .content-footer {
+    border-top: 1px solid #59554f;
+  }
+
+  .contact-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 36px;
+    padding: 40px 0 20px 0;
+  }
+    .footer-logo {
+      width: 55px;
+      height: auto;
+      opacity: .5;
+    }
+    .location-name {
+      padding-bottom: 10px;
+      font-size: 20px;
+      font-weight: 700px;
+      color: #dead5d;
+    }
+    .location-adress {
+      font-size: 14px;
+      font-weight: 300;
+      color: #acaaa7;
+      line-height: 21px;
+    }
+
+    .rrss-list {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+      .rrss-list li {
+        width: 33px;
+        height: 33px;
+        margin-left: 6px;
+      } 
+        .rrss-links {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: #acaaa7;
+        }
+        .rrss-links svg {
+          width: 33px;
+          height: 33px;
+        }
+
+        .rrss-links svg .svg-circle {
+          fill: #acaaa7;
+        }
+
+        .rrss-links svg path {
+          fill: #302a23;
+        }
+
+
+  .copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 20px 100px 25px 0;
+
+    background: url(../img/svg/logo-intermark.svg) right center no-repeat;
+    background-size: 96px auto;
+
+    font-size: 12px;
+    color: #acaaa7;
+  }
+    .copyright a {
+      color: #acaaa7;
+      text-decoration: none;
+    }
+
+    .copyright li + li {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid #acaaa7;
+    }
+

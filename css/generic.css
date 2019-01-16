@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+
+  background: #fff;
+
+  font: 400 16px "Silka";
+  color: #fff;
+}
+
+  .content-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .content-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 85px;
+    box-sizing: border-box; 
+  }
+
+  .gray-background {
+    background-color: #59554f;
+  }
+  .gray-dark-background {
+    background-color: #302a23;
+  }
+
+  .half-content {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .article-header {
+    max-width: 600px;
+    padding-left: 30px;
+    font-size: 64px;
+    line-height: 64px;
+    color: #efefef;
+  }
+
+  #contact-section {
+    position: relative;
+    padding: 110px 0 65px;
+  }
+  .contact-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 190px;
+    background: url(../img/svg/icon-castle.svg) top center no-repeat;
+    background-size: auto 150px; 
+  }
+    .contact-text {
+      padding-bottom: 10px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .contact-links {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      line-height: 29px;
+    }
+      .contact-links a {
+        font-size: 24px;
+        font-weight: 300;
+        color: #acaaa7;
+        text-decoration: none;
+      }
