@@ -1,35 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 338.8 393" style="enable-background:new 0 0 338.8 393;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;}
-	.st1{fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:28,28;}
-</style>
-<g id="Desktop">
-	<g id="Desktop---Inicio" transform="translate(-970.000000, -3803.000000)">
-		<g id="nosotros" transform="translate(0.000000, 3803.000000)">
-			<g id="bg">
-				<g id="icon-triangulo" transform="translate(971.000000, -35.000000)">
-					<polygon id="Abstract-11" class="st0" points="223.2,192.3 168.2,288.1 113.1,192.3 					"/>
-					<polygon id="Abstract-11_1_" class="st0" points="337.1,133.7 168.4,427.4 -0.4,133.7 					"/>
-					<polygon id="Abstract-11_2_" class="st0" points="-0.3,329.3 168.5,35.6 337.2,329.3 					"/>
-					<path id="Path" class="st1" d="M91.1,227.4c0-42.8,34.5-77.5,77.1-77.5c42.6,0,77.1,34.7,77.1,77.5s-34.5,77.5-77.1,77.5
-						C125.6,304.9,91.1,270.2,91.1,227.4z"/>
-					<path id="Path_1_" class="st0" d="M70.8,231.5c0-54,43.6-97.7,97.4-97.7c53.8,0,97.4,43.8,97.4,97.7s-43.6,97.7-97.4,97.7
-						C114.4,329.2,70.8,285.5,70.8,231.5z"/>
-					<path id="Line" class="st0" d="M168.2,288.1v-95.8"/>
-					<path id="Line-2" class="st0" d="M168.2,214.6h41.9"/>
-					<path id="Line-3" class="st0" d="M168.2,235.3h30.3"/>
-					<path id="Line-4" class="st0" d="M168.8,256h17.3"/>
-					<path id="Line-6" class="st0" d="M-0.3,133.7l84.1,48.7"/>
-					<path id="Line-7" class="st0" d="M337.1,329.2l-85-48.7"/>
-					<path id="Line-6_1_" class="st0" d="M336.9,133.7l-84.1,48.7"/>
-					<path id="Line-7_1_" class="st0" d="M-0.4,329.2l85-48.7"/>
-					<path id="Line-5" class="st0" d="M168.2,35.6v97.9"/>
-					<path id="Line-8" class="st0" d="M168.8,427.4v-98.2"/>
-				</g>
-			</g>
-		</g>
-	</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="337.59" height="391.79" viewBox="0 0 337.59 391.79">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="337.59" height="391.79"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <g id="triángulo" transform="translate(-0.5 0.5)" opacity="0.2">
+      <g id="Group_3" data-name="Group 3">
+        <path id="Abstract_11" data-name="Abstract 11" d="M110.08,0,55.041,95.84,0,0Z" transform="translate(113.784 156.664)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Abstract_11-2" data-name="Abstract 11" d="M337.442,0,168.724,293.7,0,0Z" transform="translate(0.303 98.093)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Abstract_11-3" data-name="Abstract 11" d="M337.442,0,168.724,293.7,0,0Z" transform="translate(337.841 293.698) rotate(180)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Path" d="M0,77.468C0,34.684,34.5,0,77.058,0s77.058,34.684,77.058,77.468-34.5,77.468-77.058,77.468S0,120.252,0,77.468Z" transform="translate(91.766 114.336)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" stroke-dasharray="28 28"/>
+        <path id="Path-2" data-name="Path" d="M0,97.747C0,43.763,43.592,0,97.364,0s97.364,43.763,97.364,97.747-43.589,97.747-97.364,97.747S0,151.73,0,97.747Z" transform="translate(71.475 98.121)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line" d="M.223,95.864V.024" transform="translate(168.6 156.64)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_2" data-name="Line 2" d="M.223.4H42.15" transform="translate(168.6 178.618)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_3" data-name="Line 3" d="M.223.264H30.564" transform="translate(168.6 199.397)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_4" data-name="Line 4" d="M.041.2H17.379" transform="translate(169.4 220.175)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_6" data-name="Line 6" d="M.4.22,84.5,48.949" transform="translate(0 97.9)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_7" data-name="Line 7" d="M85.243,49.063.2.392" transform="translate(252.501 244.55)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_6-2" data-name="Line 6" d="M-.4.22-84.5,48.949" transform="translate(338 97.9)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_7-2" data-name="Line 7" d="M-85.243,49.063-.2.392" transform="translate(85.499 244.55)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_5" data-name="Line 5" d="M.223,0V97.9" transform="translate(168.6)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+        <path id="Line_8" data-name="Line 8" d="M.441,98.491V.313" transform="translate(169 293.301)" fill="none" stroke="#dead5d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
 </svg>
