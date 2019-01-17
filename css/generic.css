@@ -27,6 +27,21 @@ body {
     box-sizing: border-box; 
   }
 
+  .stripe-background {
+    position: relative;
+  }
+  .stripe-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 384px);
+    width: 768px;
+    height: 100%;
+    border-left: 1px solid rgba(241,241,241,.05);
+    background: linear-gradient(90deg, transparent calc(100% - 1px), rgba(241,241,241,.05) 0, rgba(241,241,241,.05) 100%, transparent 0);
+    background-size: 25% 1px;
+  }
+
   .gray-background {
     background-color: #59554f;
   }
@@ -40,6 +55,7 @@ body {
   }
 
   .article-header {
+    position: relative;
     max-width: 600px;
     padding-left: 30px;
     font-size: 64px;
@@ -47,7 +63,7 @@ body {
     color: #efefef;
   }
 
-  #contact-section {
+  #contact-section .content-wrapper {
     position: relative;
     padding: 110px 0 65px;
   }
