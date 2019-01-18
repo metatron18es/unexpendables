@@ -24,11 +24,6 @@ footer {
     grid-column-gap: 36px;
     padding: 40px 0 20px 0;
   }
-    .footer-logo {
-      width: 55px;
-      height: auto;
-      opacity: .5;
-    }
     .location-name {
       padding-bottom: 10px;
       font-size: 20px;
