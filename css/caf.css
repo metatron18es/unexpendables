@@ -1,0 +1,353 @@
+@import "reset.css";
+@import "fonts.css";
+@import "header.css";
+@import "footer.css";
+@import "contact.css";
+@import "generic.css";
+
+#proyect-header {
+  padding-bottom: 35px;
+  z-index: 1;
+}
+  #proyect-header .content-wrapper {
+    align-items: center;
+    max-width: 435px;
+    padding: 0;
+  }
+
+    .proyect-title {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 20px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      color: #dead5d;
+    }
+      .proyect-name {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 65px;
+        color: #fff;
+      }
+
+    .proyect-description {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      box-sizing: border-box;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #dead5d;
+    }
+      .proyect-description p + p {
+        padding-top: 1em;
+      }
+      .proyect-description p {
+        position: relative;
+        padding: 0 25px;
+        border-width: 0 1px;
+        border-color: #dead5d;
+        border-style: solid;
+      }
+        .proyect-description p:first-of-type::before,
+        .proyect-description p:first-of-type::after,
+        .proyect-description p:last-of-type::before,
+        .proyect-description p:last-of-type::after  {
+          content: "";
+          position: absolute;
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: #dead5d;
+        }
+          .proyect-description p:first-of-type::before,
+          .proyect-description p:first-of-type::after {
+            top: 0;
+          }
+          .proyect-description p:last-of-type::before,
+          .proyect-description p:last-of-type::after {
+            bottom: 0;
+          }
+          .proyect-description p:first-of-type::before,
+          .proyect-description p:last-of-type::before {
+            left: -5px;
+          }
+          .proyect-description p:first-of-type::after,
+          .proyect-description p:last-of-type::after {
+            right: -5px;
+          }
+
+
+    .features-content {
+      width: 100%;
+      max-width: 470px;
+      padding: 0 0 0 30px;
+      box-sizing: border-box;
+    }
+      .infosection-title {
+        position: relative;
+        padding-top: 75px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        color: #fff;
+      }
+      .infosection-text {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #acaaa7;
+      }
+
+      .infosection-list {
+        padding-top: 45px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #9c8156;
+        }
+        .infosection-list li {
+          padding-left: 40px;
+          background-position: left center;
+          background-repeat: no-repeat; 
+        }
+          .infosection-list li + li {
+            margin-top: 20px;
+          }
+          .infosection-list li.eye-icon {
+            background-image: url(../img/svg/icon-eye.svg);
+          }
+          .infosection-list li.flag-icon {
+            background-image: url(../img/svg/icon-flag.svg);
+          }
+
+    .numbered-list {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      grid-column-gap: 20px;
+      grid-row-gap: 40px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #dead5d;
+    }
+      .numbered-info {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+        .numbered-value {
+          margin-right: 5px;
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+  #value-section {
+    position: relative;
+    padding: 495px 0 320px; 
+  }
+    #value-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 450px;
+      background: url(../img/caf-header.png) center no-repeat;
+      background-size: cover;
+    } 
+    #value-section .content-wrapper {
+      position: relative;
+    }
+    #value-section .features-content {
+      align-self: flex-start;
+    }
+      #value-section .features-content::before {
+        content: "";
+        position: absolute;
+        top: -45px;
+        left: 555px;
+        width: calc(100% - 555px);
+        height: 100%;
+        background: url(../img/caf-valor.png) top left no-repeat;
+      }
+      #value-section .infosection-title {
+        background-image: url(../img/svg/icon-valor.svg);
+      }
+
+  #inteligence-section {
+    position: relative;
+    padding: 430px 0 130px; 
+  }
+    #inteligence-section .content-wrapper {
+      position: relative;
+    }
+      #inteligence-section .content-wrapper::before {
+        content: "";
+        position: absolute;
+        top: -738px;
+        left: calc(50% - 555px);
+        width: 1110px;
+        height: 616px;
+        background: url(../img/caf-medium.png) no-repeat center;
+      }
+    #inteligence-section .features-content {
+      align-self: flex-end;
+    }
+    #inteligence-section .features-content::before {
+      content: "";
+      position: absolute;
+      top: -65px;
+      right: 555px;
+      width: calc(100% - 555px);
+      height: 100%;
+      background: url(../img/caf-inteligencia.png) top left no-repeat;
+    }
+    #inteligence-section .infosection-title {
+      background-image: url(../img/svg/icon-inteligencia.svg);
+    }
+
+  #heart-section{
+    position: relative;
+    padding: 160px 0 120px; 
+  }
+    #heart-section .content-wrapper {
+      position: relative;
+    }
+    #heart-section .features-content {
+      align-self: flex-start;
+    }
+      #heart-section .infosection-title, 
+      #heart-section .infosection-text {
+        color: #302a23;
+      }
+      #heart-section .features-content::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 555px;
+        width: calc(100% - 555px);
+        height: 100%;
+        background: url(../img/caf-corazon.png) top left no-repeat;
+      }
+      #heart-section .infosection-title {
+        background-image: url(../img/svg/icon-corazon.svg);
+      }
+
+  /* Camino de baldosas amarillas */
+
+  #value-section .content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -435px;
+    left: 83.5px;
+    width: 3px;
+    height: 440px;
+    background-image: linear-gradient(to bottom, #dead5d 50%, transparent 50%);
+    background-size: 3px 20px;
+    border: none;
+  }
+  #value-section .content-wrapper:after {
+    content: "";
+    position: absolute;
+    top: -440px;
+    left: 75px;
+    width: 20px;
+    height: 20px;
+    background: #dead5d;
+    border-radius: 50%;
+  }
+  #value-section .infosection-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px;
+    height: 3px;
+    background: #dead5d;
+  }
+
+  #inteligence-section .infosection-title::before {
+    content: "";
+    position: absolute;
+    top: -122px;
+    left: -31.5px;
+    width: 3px;
+    height: calc(100% + 122px);
+    background-image: linear-gradient(to bottom, #dead5d 50%, transparent 50%);
+    background-size: 3px 20px;
+    border: none;
+  }
+  #inteligence-section .infosection-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    width: 20px;
+    height: 3px;
+    background: #dead5d;
+  }
+
+
+  #heart-section .infosection-title::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    left: -31.5px;
+    width: 3px;
+    height: calc(100% + 160px);
+    background-image: linear-gradient(to bottom, #dead5d 50%, transparent 50%);
+    background-size: 3px 20px;
+    border: none;
+  }
+  #heart-section .infosection-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    background: #dead5d;
+    border-radius: 50%;
+  }
+  #heart-section .content-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 3px;
+    background: #dead5d;
+  }
+  #heart-section .content-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 1.5px);
+    width: 3px;
+    height: 120px;
+    background-image: linear-gradient(to bottom, #dead5d 50%, transparent 50%);
+    background-size: 3px 20px;
+    border: none;
+  }
+  #heart-section::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: #dead5d;
+    border-radius: 50%;
+  }

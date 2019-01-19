@@ -30,6 +30,10 @@ body {
     align-items: center;
   }
   .content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     max-width: 1280px;
     padding: 0 85px;
@@ -96,6 +100,7 @@ body {
       padding-bottom: 10px;
       font-size: 40px;
       font-weight: 600;
+      color: #302a23;
     }
     .contact-links {
       display: flex;
@@ -107,9 +112,16 @@ body {
       .contact-links a {
         font-size: 24px;
         font-weight: 300;
-        color: #acaaa7;
+        color: #302a23;
         text-decoration: none;
       }
+
+      .gray-dark-background .contact-text{
+        color: #efefef;
+      }
+        .gray-dark-background .contact-links a {
+          color: #acaaa7;
+        }
 
 
   /* Animations */
