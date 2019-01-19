@@ -110,3 +110,31 @@ body {
         color: #acaaa7;
         text-decoration: none;
       }
+
+
+  /* Animations */
+
+  .animated-start .fade-in-up-animation,
+  .animated-zone.fade-in-up-animation ,
+  .animated-zone >.fade-in-up-animation {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  .fade-in-up-animation {
+    opacity: 1;
+    transition: transform .3s, opacity.3s;
+  }
+
+  .animated-start .zoom-in-animation,
+  .animated-zone.zoom-in-animation ,
+  .animated-zone >.zoom-in-animation {
+    transform: scale(0);
+  }
+  .zoom-in-animation {
+    transform: scale(1);
+    transition: transform .3s;
+  }
+
+  .contact-links a:nth-child(2) {
+    transition-delay: .1s;
+  }
