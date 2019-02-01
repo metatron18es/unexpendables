@@ -11,14 +11,14 @@
 <body class="animated-start">
   <header>
     <article class="header-wrapper">
-      <h1 class="header-logo fade-in-up-animation">
+      <h1 class="header-logo">
         <img src="img/svg/logo-unexpendables.svg" class="unexpendables-logo" alt="">
       </h1>
       <nav class="header-nav">
-        <a href="somos.html" class="nav-link">SOMOS</a>
-        <a href="hacemos.html" class="nav-link">HACEMOS</a>
-        <a href="conseguimos.html" class="nav-link">CONSEGUIMOS</a>
-        <a href="contacto.html" class="nav-link">CONTACTO</a>
+        <a href="#useful-anchor" class="nav-link">SOMOS</a>
+        <a href="#portfolio-anchor" class="nav-link">HACEMOS</a>
+        <a href="#features-anchor" class="nav-link">CONSEGUIMOS</a>
+        <a href="#contact-section" class="nav-link">CONTACTO</a>
       </nav>
     </article>
   </header>
@@ -31,7 +31,7 @@
         </div>
       </article>
     </section>
-    <section class="content-section gray-background stripe-background">
+    <section class="content-section gray-background stripe-background" id="useful-anchor">
       <article class="content-wrapper animated-zone" id="useful-things">
         <h3 class="article-header fade-in-up-animation">Diseñamos cosas que funcionan</h3>
         <ul class="useful-list animated-zone">
@@ -46,44 +46,80 @@
         </ul>
       </article>
     </section>
-    <section class="content-section gray-background">
+    <section class="content-section gray-background" id="portfolio-anchor">
       <article class="grid-wrapper">
         <ul class="grid-portfolio animated-zone">
           <li class="grid-gofit zoom-in-animation">
-            <a href="gofit.html" class="proyect-content" id="gofit-proyect">
+            <div class="proyect-content" id="gofit-proyect">
               <h4 class="proyect-name">GoFit</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-caf zoom-in-animation">
-            <a href="caf.html" class="proyect-content" id="caf-proyect">
+            <div class="proyect-content" id="caf-proyect">
               <h4 class="proyect-name">CAF</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-bankia zoom-in-animation">
-            <a href="bankia.html" class="proyect-content" id="bankia-proyect">
+            <div class="proyect-content" id="bankia-proyect">
               <h4 class="proyect-name">Bankia</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-mundiplan zoom-in-animation">
-            <a href="mundiplan.html" class="proyect-content" id="mundiplan-proyect">
+            <div class="proyect-content" id="mundiplan-proyect">
               <h4 class="proyect-name">Mundiplan</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-bbk zoom-in-animation">
-            <a href="bbk.html" class="proyect-content" id="bbk-proyect">
+            <div class="proyect-content" id="bbk-proyect">
               <h4 class="proyect-name">BBK</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-orona zoom-in-animation">
-            <a href="orona.html" class="proyect-content" id="orona-proyect">
+            <div class="proyect-content" id="orona-proyect">
               <h4 class="proyect-name">Orona</h4>
               <p class="proyect-type">SERVICE</p>
-            </a>
+              <div class="hover-zone">
+                <p class="proyect-description">Ayudamos a que la compañía alcanzara un valor de venta de 300 millones de euros.</p>
+                <div class="button-zone">
+                  <a href="" class="button-style">VER PROYECTO</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="grid-descubre zoom-in-animation">
             <div class="proyect-content">
@@ -94,7 +130,7 @@
         </ul>
       </article>
     </section>
-    <section class="content-section gray-background stripe-background">
+    <section class="content-section gray-background stripe-background" id="features-anchor">
       <article class="content-wrapper animated-zone" id="features">
         <h3 class="article-header fade-in-up-animation">Creamos porque creemos</h3>
         <ul class="features-list animated-zone">
@@ -132,18 +168,23 @@
     <section class="content-section gray-dark-background stripe-background animated-zone" id="clients-content">
       <article class="content-wrapper" id="clients">
         <ul class="half-content client-list animated-zone">
-          <li class="zoom-in-animation"><img src="img/clients/orange.svg" alt=""></l>
-          <li class="zoom-in-animation"><img src="img/clients/adeslas.svg" alt=""></li>
+          <!-- <li class="zoom-in-animation"><img src="img/clients/adeslas.svg" alt=""></li> -->
+          <li class="zoom-in-animation"><img src="img/clients/alsa.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/ausolan.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/ayuntamiento-barcelona.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/ayuntamiento-bilbao.svg" alt=""></li>
           <li class="zoom-in-animation"><img src="img/clients/bankia.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/iberia.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/bbk.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/caf.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/caja-rural.svg" alt=""></li>
+          <!-- <li class="zoom-in-animation"><img src="img/clients/iberia.svg" alt=""></li>
           <li class="zoom-in-animation"><img src="img/clients/jazztel.svg" alt=""></li>
           <li class="zoom-in-animation"><img src="img/clients/mcdonalds.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/orange.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/adeslas.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/bankia.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/orange.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/adeslas.svg" alt=""></li>
-          <li class="zoom-in-animation"><img src="img/clients/bankia.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/orange.svg" alt=""></li> -->
+          <li class="zoom-in-animation"><img src="img/clients/orona.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/panda.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/prisa.svg" alt=""></li>
+          <li class="zoom-in-animation"><img src="img/clients/sherpa.svg" alt=""></li>
         </ul>
         <div class="half-content client-presentation animated-zone">
           <h2 class="client-title fade-in-up-animation">Quédate con quien te mire como si fueras magia</h2>
@@ -165,11 +206,11 @@
   </main>
   <footer class="stripe-background"> 
     <article class="content-footer">
-      <ul class="contact-list animated-zone">
-        <li class="fade-in-up-animation">
+      <ul class="contact-list">
+        <li>
           <img src="img/svg/logo-unexpendables.svg" class="unexpendables-logo" alt="">
         </li>
-        <li class="fade-in-up-animation">
+        <li>
           <h3 class="location-name">Bilbao</h3>
           <address class="localtion-info">
             <p class="location-adress">Gran Vía Don Diego Lopez de Haro, 81,</p>
@@ -177,31 +218,7 @@
             <p class="location-adress">48011</p>
           </address>
         </li>
-        <li class="fade-in-up-animation">
-          <h3 class="location-name">Madrid</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Claudio Coello, 124,</p>
-            <p class="location-adress">Planta 5,</p>
-            <p class="location-adress">28006</p>
-          </address>
-        </li>
-        <li class="fade-in-up-animation">
-          <h3 class="location-name">Gijón</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Avda. del Jardín Botánico, 1345.</p>
-            <p class="location-adress">Edif. Grupo Intermark</p>
-            <p class="location-adress">33203</p>
-          </address>
-        </li>
-        <li class="fade-in-up-animation">
-          <h3 class="location-name">México DF</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Paseo de la Reforma,</p>
-            <p class="location-adress">265, planta 16</p>
-            <p class="location-adress">06500</p>
-          </address>
-        </li>
-        <li class="fade-in-up-animation rrss-content">
+        <li class="rrss-content">
           <ul class="rrss-list">
             <li>
               <a href="" class="rrss-links">
@@ -221,14 +238,151 @@
           </ul></li>
       </ul>
     </article>
-    <article class="content-footer stripe-background">
+    <article class="content-footer">
       <ul class="copyright">
         <li>&copy; 2019 Unexpendables</li>
-        <li><a href="">Aviso legal y política de cookies</a></li>
+        <li><button class="modal-text-button modal-button" rel="legal-advise">Aviso legal</button></li>
+        <li><button class="modal-text-button modal-button" rel="cookies-policy">Política de cookies</button></li>
+        <li><button class="modal-text-button modal-button" rel="privacity-policy">Política de privacidad</button></li>
       </ul>
     </article>
   </footer>
-
-  <script src="js/animations.js"></script>
+  <div class="modal" id="legal-advise">
+    <article class="modal-content">
+      <div class="modal-title-content">
+        <h2 class="modal-title">Aviso Legal</h2>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-text">
+        <ol class="modal-options-list">
+          <li>
+            <h3 class="modal-text-title">1. Propiedad intelectual</h3>
+            <p class="modal-text-paragraph">El código fuente, los diseños gráficos, las imágenes, las fotografías, los sonidos, las animaciones, el software, los textos, así como la información y los contenidos que se recogen en Aviso legal están protegidos por la legislación española sobre los derechos de propiedad intelectual e industrial a favor de Unexpendables y no se permite la reproducción y/o publicación, total o parcial, del sitio web, ni su tratamiento informático, su distribución, su difusión, ni su modificación, transformación o descompilación, ni demás derechos reconocidos legalmente a su titular, sin el permiso previo y por escrito del mismo.</p>
+            <p class="modal-text-paragraph">El usuario, única y exclusivamente, puede utilizar el material que aparezca en este sitio web para su uso personal y privado, quedando prohibido su uso con fines comerciales o para incurrir en actividades ilícitas. Todos los derechos derivados de la propiedad intelectual están expresamente reservados por Unexpendables.</p>
+            <p class="modal-text-paragraph">Unexpendables velará por el cumplimiento de las anteriores condiciones como por la debida utilización de los contenidos presentados en sus páginas web, ejercitando todas las acciones civiles y penales que le correspondan en el caso de infracción o incumplimiento de estos derechos por parte del usuario.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">2. Protección de datos de carácter personal</h3>
+            <p class="modal-text-paragraph">En el marco del cumplimiento de la legislación vigente, recogida en la Ley Orgánica 15/1999, de 13 de diciembre, sobre protección de Datos de Carácter Personal (LOPD), cuyo objeto es garantizar y proteger, en lo que concierne al tratamiento de los datos personales, las libertades y derechos fundamentales de las personas físicas, y especialmente de su honor e intimidad personal, Unexpendables informa a los usuarios de que: Unexpendables ha adoptado las medidas técnicas y organizativas conforme a lo dispuesto en la normativa vigente.</p>
+            <p class="modal-text-paragraph">Los Datos de Carácter Personal que recoge www.unexpendables.com son objeto de tratamiento automatizado y se incorporan debidamente registrados en la Agencia de Protección de Datos, cuya titularidad corresponde a Unexpendables.</p>
+            <p class="modal-text-paragraph">La recogida y tratamiento automatizado de los Datos de Carácter Personal tiene como finalidad el mantenimiento de la relación contractual que en su caso se establezca con Unexpendables, así como el desempeño de las tareas de información, formación, comercialización (tarea esta última siempre identificada como tal) y otras actividades propias de la empresa. Unexpendables ha adoptado los niveles de seguridad adecuados a los datos que se facilitan y, además, se han instalado todos los medios y medidas técnicas a su
+            alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos que nos facilitan. El usuario podrá, en todo momento, ejercitar los derechos reconocidos en la LOPD, de acceso, rectificación, cancelación y oposición.</p>
+            <p class="modal-text-paragraph">Si deseas más información sobre nuestra política de privacidad infórmate en la siguiente página: <button class="modal-button modal-text-button" rel="privacity-policy">Política de privacidad</button>.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">3. Varios</h3>
+            <ol>
+              <li>
+                <p class="modal-text-paragraph">A.- Www.unexpendables.com utiliza cookies que se quedarán almacenadas en el ordenador. Las cookies son pequeños archivos que nuestro ordenador envía al suyo, pero que no nos proporcionan información ni sobre su nombre, ni sobre cualquier dato de carácter personal suyo. Las cookies que utilizamos no pueden leer datos de su ordenador ni leer las cookies que existan en su ordenador. Cuando el usuario se encuentre navegando por las páginas web de www.unexpendables.com el servidor donde se encuentra alojada reconoce automáticamente la dirección IP de su ordenador, el día y la hora en la que comienza la visita, en la que abandona la visita, así como información sobre las distintas secciones consultadas. Es necesario que el servidor conozca estos datos para poder comunicarse y enviarle la petición realizada y que a través del navegador se pueda ver en la pantalla.</p>
+              <p class="modal-text-paragraph">Si lo deseas puedes configurar tu navegador de manera que te avise en la pantalla si vas a recibir una cookie. El usuario puede configurar su ordenador de manera que no reciba estas cookies, este hecho no impedirá que se pueda acceder a la información del sitio web www.unexpendables.com.</p>
+              <p class="modal-text-paragraph">Si deseas más información sobre el tratamiento de cookies de este sitio web infórmate en la siguiente página: Política de cookies.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">B.- Unexpendables podrá modificar, sin previo aviso, la información contenida en su sitio web, así como su configuración y presentación.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">C.- Unexpendables se compromete a través de este medio a NO REALIZAR PUBLICIDAD ENGAÑOSA. A estos efectos, por lo tanto, no serán considerados como publicidad engañosa los errores formales o numéricos que puedan encontrarse a lo largo del contenido de las distintas secciones de la web de Unexpendables, producidos como consecuencia de un mantenimiento y/o actualización incompleta o defectuosa de la información contenida es estas secciones. Unexpendables, como consecuencia de lo dispuesto en este apartado, se compromete a corregirlo tan pronto como tenga conocimiento de dichos errores.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">D.- Unexpendables se compromete a NO REMITIR COMUNICACIONES COMERCIALES SIN IDENTIFICARLAS COMO TALES, conforme a lo dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y de comercio electrónico. A estos efectos no será considerado como comunicación comercial toda la información que se envíe A LOS CLIENTES de Unexpendables siempre que tenga por finalidad el mantenimiento de la relación contractual existente entre cliente y Unexpendables, así como el desempeño de las tareas de información, formación y otras actividades propias del servicio que el cliente tiene contratado con la empresa.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">E.- Unexpendables no se hace responsable del incumplimiento de cualquier norma aplicable en que pueda incurrir el usuario en su acceso al sitio web www.unexpendables.com y/o en el uso de las informaciones contenidas en el mismo.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">F.- Unexpendables no será responsable de los daños y perjuicios producidos o que puedan producirse, cualquiera que sea su naturaleza, que se deriven del uso de la información, de las materias contenidas en este web site y de los programas que incorpora. Los enlaces (Links) e hipertexto que posibiliten, a través del sitio web www.unexpendables.com, acceder al usuario a prestaciones y servicios ofrecidos por terceros, no pertenecen ni se encuentran bajo el control de Unexpendables; dicha entidad no se hace responsable ni de la información contenida en los mismos ni de cualesquiera efectos que pudieran derivarse de dicha información.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">G.- Unexpendables no se hace responsable del uso ilegítimo que terceras personas puedan hacer de los nombres de marca, nombres de producto, marcas comerciales que, no siendo propiedad de dicha entidad, aparezcan en el sitio web www.unexpendables.com. Tampoco se responsabiliza de la integridad, veracidad y licitud del contenido de los enlaces a las webs a las que pueda accederse desde www.unexpendables.com.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">H.- Unexpendables no se responsabiliza de los virus que tengan su origen en una transmisión telemática infiltrados por terceras partes (por ejemplo, los macros de procesadores de texto, los applets de Java y los programas Active X), generados con la finalidad de obtener resultados negativos para un sistema informático.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">I.- En definitiva, el Usuario es el único responsable del uso que realice de los servicios, contenidos, enlaces (links) e hipertexto incluidos en el sitio web www.unexpendables.com.</p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </article>
+  </div>
+  <div class="modal" id="cookies-policy">
+    <article class="modal-content">
+      <div class="modal-title-content">
+        <h2 class="modal-title">Política de cookies</h2>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-text">
+        <ol class="modal-options-list">
+          <li>
+            <h3 class="modal-text-title">¿Quién puede tener acceso a las cookies?</h3>
+            <p class="modal-text-paragraph">Únicamente puede acceder a las cookies la entidad o empresa que las ha creado.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">¿Para qué uso las cookies?</h3>
+            <ol>
+              <li>
+                <p class="modal-text-paragraph">A.- Analítica. Utilizo estas cookies para conocer el uso que se le da a la web. Esta información nos permite continuar mejorando la experiencia de usuario.</p>
+              </li>
+              <li>
+                <p class="modal-text-paragraph">B.- Publicidad. Utilizamos estas cookies para medir la efectividad de las campañas de publicidad y que la publicidad que se te muestra se ajuste a ti y a tus intereses. Utilizamos remarketing y similares para mostrar publicidad online. Terceros, incluyendo Google, utilizarán estas cookies para mostrar publicidad online en base a las visitas a este sitio web. Se puede cancelar el uso de cookies por parte de Google en el siguiente enlace: Controla tus anuncios de Google.</p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Gestión de las cookies:</h3>
+            <p class="modal-text-paragraph">Por lo general, tu navegador te permitirá gestionar las cookies. Si decides bloquear las cookies, tú navegación en esta página web podría verse afectada o incluso impedida.</p>
+            <p class="modal-text-paragraph">Si lo deseas puedes configurar tu navegador de manera que te avise en la pantalla si vas a recibir una cookie. El usuario puede configurar su ordenador de manera que no reciba estas cookies, este hecho no impedirá que se pueda acceder a la información del sitio web www.unexpendables.com.</p>
+            <p class="modal-text-paragraph">Sí deseas más información legal sobre este sitio web accede a la siguiente página: <button class="modal-button modal-text-button" rel="legal-advise">Aviso legal</button>.</p>
+          <li>
+        </ol>
+      </div>
+    </article>
+  </div>
+  <div class="modal" id="privacity-policy">
+    <article class="modal-content">
+      <div class="modal-title-content">
+        <h2 class="modal-title">Política de cookies</h2>
+        <button class="modal-close"></button>
+      </div>
+      <div class="modal-text">
+        <ol class="modal-options-list">
+          <li>
+            <h3 class="modal-text-title">Información general:</h3>
+            <p class="modal-text-paragraph">La política de privacidad que se describe a continuación sólo es aplicable al presente Sitio Web, entendiendo como tal todas las páginas y subpáginas incluidas en el Dominio www.unexpendables.com. declinando Unexpendables cualquier responsabilidad sobre las diferentes políticas de privacidad y protección de datos de carácter personal que puedan contener los Sitios Web a los cuales pueda accederse a través de los hipervínculos ubicados en este Sitio Web y no gestionados directamente por Unexpendables.</p>
+            <p class="modal-text-paragraph">Unexpendables desea poner en conocimiento de los usuarios de este Sitio Web que la presente declaración refleja la política en materia de protección de datos que sigue Unexpendables. Esta política se ha configurado respetando escrupulosamente la normativa vigente en materia de protección de datos personales, esto es, entre otras, la Ley Orgánica 15/1999, de 13 de Diciembre, de Protección de Datos de carácter personal (en adelante LOPD) y el Real Decreto 994/1999, de 11 de Junio, que aprueba el Reglamento de medidas de seguridad de los ficheros automatizados que contengan datos de carácter personal (en adelante Reglamento 994/1999).</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Recogida de datos de carácter personal:</h3>
+            <p class="modal-text-paragraph">Unexpendables no recaba voluntariamente datos de carácter personal de los usuarios de este Sitio Web. Los únicos datos que se solicitan de los Usuarios son, en caso de que deseen pasar a ser usuarios registrados del servicio de soporte técnico, un nombre, que puede corresponder o no con el nombre real del Usuario, un “usuario” (nickname) y una dirección de e-mail.</p>
+            <p class="modal-text-paragraph">En consecuencia Unexpendables sólo dispondrá de datos personales de aquellos usuarios que voluntariamente quieran proporcionárselos a través del cuestionario de registro de usuarios de soporte. Sólo en estos casos en que el Usuario lo desee, y siempre de forma voluntaria, podrá comunicar sus datos de carácter personal a Unexpendables.</p>
+            <p class="modal-text-paragraph">Dichos datos proporcionados voluntariamente por el usuario podrán ser incorporados a un fichero automatizado, registrado ante la Agencia Española de Protección de Datos, bajo la titularidad de Unexpendables. En consecuencia, el Usuario que voluntariamente proporcione a Unexpendables sus datos personales, acepta expresamente el tratamiento de los mismos, con la exclusiva finalidad de gestionar su condición de usuario registrado de los servicio de soporte de Unexpendables.</p>
+            <p class="modal-text-paragraph">En cualquier caso, los datos recogidos serán tratados siempre respetando la normativa vigente en materia de protección de datos de carácter personal.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Medidas de seguridad:</h3>
+            <p class="modal-text-paragraph">Los datos personales comunicados por el Usuario a Unexpendables, pueden ser almacenados en bases de datos automatizadas o no, cuya titularidad corresponde en exclusiva a Unexpendables, asumiendo ésta todas las medidas de índole técnica, organizativa y de seguridad que garantizan la confidencialidad, integridad y calidad de la información contenida en las mismas de acuerdo con lo establecido en la LOPD y en el Reglamento 994/1999.</p>
+            <p class="modal-text-paragraph">La comunicación entre los usuarios y Unexpendables no utiliza un canal seguro, y los datos transmitidos no son cifrados, por lo que se solicita a los Usuarios que se abstengan de enviar aquellos datos personales que merezcan la consideración de datos especialmente protegidos en los términos del artículo 7 de la LOPD, ya que las medidas de seguridad aplicables a un canal no seguro lo hacen desaconsejable.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Finalidad del tratamiento de los datos:</h3>
+            <p class="modal-text-paragraph">Los datos de carácter personal que sean comunicados voluntariamente por el Usuario se destinarán únicamente a la finalidad concreta de gestionar su condición de usuario registrado del servicio de soporte y serán tratados con la más absoluta confidencialidad, destinándose únicamente a aquellas finalidades para las que fueron recabados y de las que expresamente se informa al Usuario en el momento de su recogida en la presente Política de Privacidad.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Cesión de datos:</h3>
+            <p class="modal-text-paragraph">Los datos de carácter personal recogidos a través de este Sitio Web no serán objeto de cesión a ningún otro sujeto ni empresa, salvo a los sujetos y en los supuestos concretos en que dicha cesión se encuentre amparada por la LOPD.</p>
+            <p class="modal-text-paragraph">El Usuario que voluntariamente comunique sus datos a Unexpendables a través de este Sitio Web consiente expresamente la utilización de dichos datos personales para el envío de información comercial por vía electrónica de los productos y servicios comercializados por Unexpendables, en estricto cumplimiento de lo dispuesto en la legislación vigente en materia de Servicios de la Sociedad de la Información, en lo que a comunicaciones comerciales se refiere, salvo que manifieste su oposición.</p>
+            <p class="modal-text-paragraph">Así mismo el Usuario que voluntariamente comunique sus datos a Unexpendables a través de este Sitio Web consiente expresamente la utilización de dichos datos personales para el envío de información comercial, incluso por medios electrónicos, de las empresas vinculadas con Unexpendables, cuya denominación social y actividad se incluye en la página de Aviso Legal en estricto cumplimiento de lo dispuesto en la legislación vigente en materia de protección de datos de carácter personal y Servicios de la Sociedad de la Información, salvo que manifieste su oposición.</p>
+          </li>
+          <li>
+            <h3 class="modal-text-title">Calidad de los datos: derechos de acceso, oposición, rectificación y cancelación.</h3>
+            <p class="modal-text-paragraph">Unexpendables se compromete a mantener en todo momento, los datos personales que voluntariamente le hayan proporcionado los usuarios de este Sitio Web, actualizados, de manera que respondan verazmente a la identidad y características personales de dichos usuarios. Por ello, cualquier Usuario puede en cualquier momento ejercer el derecho a acceder, rectificar y, en su caso, cancelar sus datos de carácter personal suministrados a Unexpendables, mediante comunicación escrita dirigida a Unexpendables.</p>
+          </li>
+        </ol>
+      </div>
+    </article>
+  </div>
+  <script src="js/unexpendables.js"></script>
 </body>
 </html>

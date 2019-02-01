@@ -123,37 +123,82 @@
         "bbk orona bankia descubre";
     } 
       .grid-portfolio li {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .grid-portfolio li::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -2;
+        transition: transform .3s;
+      }
+
+      .grid-portfolio li::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(48, 42, 35, .9);
+        opacity: 0;
+        transition: opacity .3s;
+        z-index: -2;
       }
       .grid-gofit {
         grid-area: gofit;
-        background-image: url(../img/gofit.png);
       }
+        .grid-gofit::before {
+          background-image: url(../img/gofit.png);
+        }
       .grid-caf {
         grid-area: caf;
-        background-image: url(../img/caf.png);
       }
+        .grid-caf::before {
+          background-image: url(../img/caf.png);
+        }
       .grid-bankia {
         grid-area: bankia;
-        background-image: url(../img/bankia.png);
       }
+        .grid-bankia::before {
+          background-image: url(../img/bankia.png);
+        }
       .grid-mundiplan {
         grid-area: mundiplan;
-        background-image: url(../img/mundiplan.png);
       }
+        .grid-mundiplan::before {
+          background-image: url(../img/mundiplan.png);
+        }
       .grid-bbk {
         grid-area: bbk;
-        background-image: url(../img/bbk.png);
       }
+        .grid-bbk::before {
+          background-image: url(../img/bbk.png);
+        }
       .grid-orona {
         grid-area: orona;
-        background-image: url(../img/orona.png);
       }
+        .grid-orona::before {
+          background-image: url(../img/orona.png);
+        }
       .grid-descubre {
         grid-area: descubre;
         background: #302a23;
+      }
+      .grid-portfolio li:hover::before {
+        transform: scale(1.1);
+      }
+      .grid-portfolio:hover li:not(:hover)::after {
+        opacity: 1;
+        z-index: 1;
       }
 
         .proyect-content {
@@ -193,6 +238,44 @@
             line-height: 14px;
             color: #d39126;
           }
+          .hover-zone {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity .3s, transform .3s;
+          }
+            .grid-portfolio li:hover .hover-zone {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            .proyect-description {
+              padding: 14px 0 20px;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #fff;
+            }
+            .button-zone {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: flex-start;
+              align-items: center;
+            }
+              .button-style {
+                padding: 20px 26px;
+                border: 2px solid #d39126;
+                box-sizing: border-box;
+                border-radius: 50px;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14px;
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 2px;
+                transition: background .3s;
+              }
+                .button-style:hover {
+                  background: #d39126;
+                }
 
   #features {
     position: relative;

@@ -3,30 +3,72 @@ header {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  
+  position: sticky;
+  top: 0;
   width: 100%;
+  height: 150px;
   margin-bottom: -160px;
-  padding-top: 30px;
-  z-index: 2;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 2 !important;
+  transition: background .3s, height .3s;
 }
+
+  .scroll-header {
+    height: 64px;
+    background: #302a23;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.5);
+  }
+    .scroll-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 384px);
+      width: 768px;
+      height: 100%;
+      border-left: 1px solid rgba(241,241,241,.05);
+      background: linear-gradient(90deg, transparent calc(100% - 1px), rgba(241,241,241,.05) 0, rgba(241,241,241,.05) 100%, transparent 0);
+      background-size: 25% 1px;
+    }
 
   .header-wrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
+    position: relative;
     width: 100%;
     max-width: 1280px;
-    padding-left: 85px;
     box-sizing: border-box; 
   }
+    .header-logo {
+      position: absolute;
+      top: 30px;
+      left: 85px;
+      width: 60px;
+      height: 126px;
+      overflow: hidden;
+      transition: top .3s, width .3s, height .3s;
+    }
+      .scroll-header .header-logo {
+        top: 14px;
+        width: 37px;
+        height: 36px;
+      }
 
     .header-nav {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
       align-items: center;
+      padding: 30px 0;
+      transition: padding .3s;
     }
+      .scroll-header .header-nav { 
+        padding: 25px 0;
+      }
       .header-nav a {
         padding: 0 32px;
         font-size: 12px;
@@ -38,10 +80,13 @@ header {
       .header-nav a + a {
         border-left: 1px solid #d39126;
       }
+      .header-nav a:hover {
+        color: #d39126;
+      }
 
 
   .header-nav a {
-    transition: transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s, color .3s;
   }
   .animated-start .header-nav a {
     transform: translateX(10px);
