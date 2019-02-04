@@ -103,7 +103,7 @@ body {
     .contact-text {
       padding-bottom: 10px;
       font-size: 40px;
-      font-weight: 600;
+      font-weight: 300;
       color: #302a23;
     }
     .contact-links {
@@ -133,24 +133,24 @@ body {
   .animated-start .fade-in-up-animation,
   .animated-zone.fade-in-up-animation ,
   .animated-zone >.fade-in-up-animation {
-    transform: translateY(10px);
+    transform: translateY(5px);
     opacity: 0;
   }
   .fade-in-up-animation {
     opacity: 1;
-    transition: transform .3s, opacity.3s;
-  }
-
-  .animated-start .zoom-in-animation,
-  .animated-zone.zoom-in-animation ,
-  .animated-zone >.zoom-in-animation {
-    transform: scale(0);
-  }
-  .zoom-in-animation {
-    transform: scale(1);
-    transition: transform .3s;
-  }
-
+    transition: transform .6s, opacity.6s;
+    }
+    
+    .animated-start .zoom-in-animation,
+    .animated-zone.zoom-in-animation ,
+    .animated-zone >.zoom-in-animation {
+      transform: scale(0);
+    }
+    .zoom-in-animation {
+      transform: scale(1);
+      transition: transform .3s;
+    }
+    
   .contact-links a:nth-child(2) {
     transition-delay: .1s;
   }
@@ -202,7 +202,8 @@ body {
           width: 70px;
           height: 70px;
           margin: 0;
-          padding: 0;
+          padding: 20px;
+          box-sizing: border-box;
           border-radius: 0;
           border: none;
           background: #d6d4d3;
@@ -211,7 +212,7 @@ body {
           transition: background .3s;
         }
           .modal-close:hover {
-            background: #d39126;
+            background: #dead5d;
           }
       .modal-text {
         padding: 55px;

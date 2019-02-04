@@ -40,7 +40,10 @@ function scrollingAnimations(scroll_pos) {
   if(animatedZones){
     animatedZones.forEach( function(element) {
       var posicionTop = getTop(element);
-      var dataScroll = 200;
+      var dataScroll = element.getAttribute('data-scroll');
+      if(!dataScroll) {
+        dataScroll = 200;
+      }
       var startPosAnimation = viewPortHeight - dataScroll;
       if((posicionTop < (scroll_pos + startPosAnimation)) || (scroll_pos + viewPortHeight + 200) >= documentHeight) {
         element.classList.remove('animated-zone');

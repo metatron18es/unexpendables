@@ -125,6 +125,7 @@
       .grid-portfolio li {
         position: relative;
         overflow: hidden;
+        transform: scale(1);
       }
       
       .grid-portfolio li::before {
@@ -138,7 +139,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -2;
-        transition: transform .3s;
+        transition: transform .6s;
       }
 
       .grid-portfolio li::after {
@@ -150,7 +151,7 @@
         left: 0;
         background: rgba(48, 42, 35, .9);
         opacity: 0;
-        transition: opacity .3s;
+        transition: opacity .6s;
         z-index: -2;
       }
       .grid-gofit {
@@ -583,7 +584,7 @@
 
   /* Animaciones parrafos */
   .animated-start #index-header:after {
-    transform: translateX(100px);
+    transform: translateX(10px);
     opacity: 0;
   }
   #index-header:after {
