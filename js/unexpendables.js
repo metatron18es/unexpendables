@@ -82,6 +82,7 @@ function hideModal() {
 
 function onLoadFunctions() {
   var menuButton = document.querySelector('#menu-button');
+  var navLinks = document.querySelectorAll('.nav-link');
   var videoHeader = document.querySelector('#video_content');
   var modalButtons = document.querySelectorAll('.modal-button');
   var modalClose = document.querySelectorAll('.modal-close');
@@ -114,6 +115,11 @@ function onLoadFunctions() {
   if(modalClose){
     modalClose.forEach( function(element) {
       element.addEventListener('click', hideModal);
+    });
+  }
+  if(navLinks && window.innerWidth<769){
+    navLinks.forEach( function(element) {
+      element.addEventListener('click', toogleMenu);
     });
   }
   startAnimations();
