@@ -10,8 +10,9 @@ footer {
 
   .content-footer {
     width: 100%;
-    max-width: 1112px;
+    max-width: 1172px;
     box-sizing: border-box; 
+    padding: 0 30px;
   }
 
   .content-footer + .content-footer {
@@ -20,26 +21,57 @@ footer {
 
   .contact-list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 4fr 1fr;
     grid-column-gap: 36px;
     padding: 40px 0 20px 0;
   }
-    .location-name {
-      padding-bottom: 10px;
-      font-size: 20px;
-      font-weight: 700px;
-      color: #dead5d;
+    @media screen and (max-width: 600px) {
+      .contact-list {
+        grid-template-areas: "logo rrss" "adress adress";
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+      }
+        .logo-contact {
+          grid-area: logo;
+        }
+        .adress-contact {
+          grid-area: adress;
+          padding-top: 20px;
+        }
     }
-    .location-adress {
-      font-size: 14px;
-      font-weight: 300;
-      color: #acaaa7;
-      line-height: 21px;
+    .contact-adresses {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 36px;
     }
+      @media screen and (max-width: 900px) {
+        .contact-adresses {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .contact-adresses {
+          grid-template-columns: 1fr;
+        }
+      }
+      .location-name {
+        padding-bottom: 10px;
+        font-size: var(--font-size20);
+        font-weight: var(--font-bold);
+        color: #dead5d;
+      }
+      .location-adress {
+        font-size: var(--font-size14);
+        font-weight: var(--font-light);
+        color: #acaaa7;
+        line-height: 1.2;
+      }
 
-    .rrss-content {
-      grid-area: 1 / 6;
-    }
+      @media screen and (max-width: 600px) {
+        .rrss-content {
+          grid-area: "rrss";
+        }
+      }
 
     .rrss-list {
       display: flex;
@@ -87,13 +119,19 @@ footer {
     /* background: url(../img/svg/logo-intermark.svg) right center no-repeat;
     background-size: 96px auto; */
 
-    font-size: 12px;
+    font-size: var(--font-size12);
     color: #acaaa7;
   }
+    @media screen and (max-width: 600px) {
+      .copyright {
+        flex-direction: column;
+        padding-right: 0;
+      }
+    }
     footer .modal-text-button {
       color: #acaaa7;
-      font-size: 12px;
-      line-height: 14px;
+      font-size: var(--font-size12);
+      line-height: 1.2;
     }
       footer .modal-text-button:hover {
         color: #d39126;
@@ -107,3 +145,10 @@ footer {
       padding-left: 10px;
       border-left: 1px solid #acaaa7;
     }
+      @media screen and (max-width: 600px) {
+        .copyright li {
+          padding: 10px;
+          margin: 0;
+          border-left: none !important;
+        }
+      }

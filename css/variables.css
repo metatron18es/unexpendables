@@ -1,0 +1,34 @@
+:root {
+
+
+  --white:        #fff;
+  --gray-lighter: #acaaa7;
+  --gray-light:   #837f7b;
+  --gray:         #59554f;
+  --gray-dark:    #302a23;
+  --gray-dark-rgb:  48, 42, 35;
+  --gold:         #dead5d;
+  --gold-rgb:       222, 173, 93;
+  --gold-dark:    #d39126;
+  --gold-dark-rgb:  211, 145, 38;
+  --black:        #000;
+  --black-rgb:    0, 0, 0;
+
+  --font-size12:    12px;
+  --font-size14:    14px;
+  --font-size16:    16px;
+  --font-size20:    1.25rem;
+  --font-size24:    1.5rem;
+  --font-size26:    1.625rem;
+  --font-size30:    1.875rem;
+  --font-size32:    2rem;
+  --font-size40:    2.5rem;
+  --font-size48:    3rem;
+  --font-size54:    3.375rem;
+  --font-size64:    4rem;
+
+  --font-light:     300;
+  --font-regular:   400;
+  --font-semibold:  600;
+  --font-bold:      700;
+}

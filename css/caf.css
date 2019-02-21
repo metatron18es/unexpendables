@@ -21,15 +21,15 @@
       justify-content: flex-start;
       align-items: center;
       padding-bottom: 20px;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 29px;
+      font-size: var(--font-size24);
+      font-weight: var(--font-regular);
+      line-height: 1.2;
       color: #dead5d;
     }
       .proyect-name {
-        font-size: 54px;
-        font-weight: 700;
-        line-height: 65px;
+        font-size: var(--font-size54);
+        font-weight: var(--font-bold);
+        line-height: 1.2;
         color: #fff;
       }
 
@@ -39,9 +39,9 @@
       justify-content: flex-start;
       align-items: stretch;
       box-sizing: border-box;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17px;
+      font-size: var(--font-size14);
+      font-weight: var(--font-regular);
+      line-height: 1.2;
       color: #dead5d;
     }
       .proyect-description p + p {
@@ -94,24 +94,24 @@
         padding-top: 75px;
         background-position: top left;
         background-repeat: no-repeat;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 40px;
+        font-size: var(--font-size32);
+        font-weight: var(--font-semibold);
+        line-height: 1.2;
         color: #fff;
       }
       .infosection-text {
         padding-top: 20px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 24px;
+        font-size: var(--font-size20);
+        font-weight: var(--font-regular);
+        line-height: 1.2;
         color: #acaaa7;
       }
 
       .infosection-list {
         padding-top: 45px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 28px;
+        font-size: var(--font-size16);
+        font-weight: var(--font-semibold);
+        line-height: 1.2;
         color: #9c8156;
         }
         .infosection-list li {
@@ -136,9 +136,9 @@
       grid-row-gap: 40px;
       padding-top: 40px;
       padding-bottom: 30px;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 19px;
+      font-size: var(--font-size16);
+      font-weight: var(--font-semibold);
+      line-height: 1.2;
       color: #dead5d;
     }
       .numbered-info {
@@ -149,8 +149,8 @@
       }
         .numbered-value {
           margin-right: 5px;
-          font-size: 30px;
-          line-height: 36px;
+          font-size: var(--font-size30);
+          line-height: 1.2;
         }
 
   #value-section {

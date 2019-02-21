@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+  font: 400 16px "Silka";
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -14,7 +20,6 @@ body {
 
   background: #fff;
 
-  font: 400 16px "Silka";
   color: #fff;
 }
   .unexpendables-logo {
@@ -25,6 +30,11 @@ body {
 
   .post-header {
     padding-top: 270px;
+  }
+  @media screen and (max-width: 768px) {
+    .post-header {
+      padding-top: 165px;
+    }
   }
 
   .content-section {
@@ -43,6 +53,12 @@ body {
     padding: 0 85px;
     box-sizing: border-box; 
   }
+    @media screen and (max-width: 600px) {
+      .content-wrapper {
+        padding: 0 15px;
+      }
+    }
+
 
   .stripe-background {
     position: relative;
@@ -55,13 +71,20 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: calc(50% - 384px);
-    width: 768px;
+    left: 50%;
+    width: 100%;
+    max-width: 768px;
     height: 100%;
     border-left: 1px solid rgba(241,241,241,.05);
     background: linear-gradient(90deg, transparent calc(100% - 1px), rgba(241,241,241,.05) 0, rgba(241,241,241,.05) 100%, transparent 0);
-    background-size: 25% 1px;
+    background-size: 192px 1px;
+    transform: translateX(-50%);
   }
+    @media screen and (max-width: 768px) {
+      .stripe-background::before {
+        display: none;
+      }
+    }
 
   .gray-background {
     background-color: #59554f;
@@ -74,13 +97,24 @@ body {
     width: 50%;
     box-sizing: border-box;
   }
+  @media screen and (max-width: 768px) {
+    .half-content {
+      width: 100%;
+    }
+  }
 
   .article-header {
     max-width: 600px;
     padding-left: 30px;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: var(--font-size64);
+    line-height: 1.2;
     color: #efefef;
+  }
+  @media screen and (max-width: 768px) {
+    .article-header {
+      padding: 0;
+      font-size: 28px;
+    }
   }
 
   #contact-section .content-wrapper {
@@ -91,31 +125,44 @@ body {
     position: relative;
     padding: 110px 0 65px;
   }
+    @media screen and (max-width: 768px) {
+      #contact-section .content-wrapper {
+        padding: 0 0 20px;
+      }
+    }
+
+  .contact-text {
+    padding-bottom: 180px;
+    font-size: var(--font-size40);
+    font-weight: var(--font-light);
+    color: #302a23;
+    background: url(../img/svg/icon-castle.svg) bottom center no-repeat;
+    background-size: auto 150px; 
+  }
+    @media screen and (max-width: 768px) {
+      .contact-text {
+        padding-bottom: 0;
+        padding-top: 190px;
+        background-position: top center;
+      }
+    }
   .contact-content {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 190px;
-    background: url(../img/svg/icon-castle.svg) top center no-repeat;
-    background-size: auto 150px; 
+    padding-top: 10px;
   }
-    .contact-text {
-      padding-bottom: 10px;
-      font-size: 40px;
-      font-weight: 300;
-      color: #302a23;
-    }
     .contact-links {
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: center;
-      line-height: 29px;
+      line-height: 1.2;
     }
       .contact-links a {
-        font-size: 24px;
-        font-weight: 300;
+        font-size: var(--font-size24);
+        font-weight: var(--font-light);
         color: #302a23;
         text-decoration: none;
       }
@@ -193,9 +240,9 @@ body {
       }
         .modal-title {
           padding-left: 22px;
-          font-size: 32px;
-          font-weight: 600;
-          line-height: 40px;
+          font-size: var(--font-size32);
+          font-weight: var(--font-semibold);
+          line-height: 1.2;
           color: #302a23;
         }
         .modal-close {
@@ -216,8 +263,8 @@ body {
           }
       .modal-text {
         padding: 55px;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: var(--font-size16);
+        line-height: 1.2;
         color: #302a23;	
       }
         .modal-options-list > li {
@@ -227,9 +274,9 @@ body {
             padding-bottom: 0;
           }
         .modal-text-title {
-          font-size: 26px;
-          font-weight: 600;
-          line-height: 32px;
+          font-size: var(--font-size26);
+          font-weight: var(--font-semibold);
+          line-height: 1.2;
           padding-bottom: 8px;
         }
         .modal-options-list > li .modal-text-paragraph {
@@ -246,8 +293,8 @@ body {
     background: transparent;
     outline: none;
     font-family: 'Silka';
-    font-size: 16px;
-    line-height: 24px;
+    font-size: var(--font-size16);
+    line-height: 1.2;
     color: #d39126;	
     cursor: pointer;
     transition: color .3s;

@@ -41,8 +41,13 @@ function scrollingAnimations(scroll_pos) {
     animatedZones.forEach( function(element) {
       var posicionTop = getTop(element);
       var dataScroll = element.getAttribute('data-scroll');
+      var dataAnimation = element.getAttribute('data-animation');
       if(!dataScroll) {
         dataScroll = 200;
+      }
+      if(dataAnimation) {
+        var elementAnimated = document.querySelector('#' + dataAnimation);
+        posicionTop = getTop(elementAnimated);
       }
       var startPosAnimation = viewPortHeight - dataScroll;
       if((posicionTop < (scroll_pos + startPosAnimation)) || (scroll_pos + viewPortHeight + 200) >= documentHeight) {
@@ -51,6 +56,11 @@ function scrollingAnimations(scroll_pos) {
     });
   }
 
+}
+
+function toogleMenu() {
+  var header = document.querySelector('header');
+  header.classList.toggle('show-menu');
 }
 
 function showModal(event) {
@@ -71,8 +81,31 @@ function hideModal() {
 }
 
 function onLoadFunctions() {
+  var menuButton = document.querySelector('#menu-button');
+  var videoHeader = document.querySelector('#video_content');
   var modalButtons = document.querySelectorAll('.modal-button');
   var modalClose = document.querySelectorAll('.modal-close');
+  var animatedZones = document.querySelectorAll('.animated-zone');
+  
+  if(videoHeader && (window.innerWidth>=768)) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('type','text/html');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/aqJON3A3TmM?autoplay=1&loop=1&mute=1&playlist=aqJON3A3TmM&controls=0');
+
+    videoHeader.appendChild(iframe);
+  }
+
+  if(window.innerWidth<700) {
+    if(animatedZones){
+      animatedZones.forEach( function(element) {
+        element.classList.remove('animated-zone');
+      });
+    }
+  }
+
+  if(menuButton){
+    menuButton.addEventListener('click', toogleMenu);
+  }
   if(modalButtons){
     modalButtons.forEach( function(element) {
       element.addEventListener('click', showModal);

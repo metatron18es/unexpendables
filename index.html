@@ -6,28 +6,28 @@
   <title>Unexpendables. We design things that work.</title>
 
   <!-- Apple touch favicons -->
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152×152.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144×144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76×76.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72×72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
   <link rel="icon" type="image/png" href="img/favicon/16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="img/favicon/32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-72×72.png" sizes="72x72">
+  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-72x72.png" sizes="72x72">
   <!-- GoogleTV icon -->
   <link rel="icon" type="image/png" href="img/favicon/google-tv-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-120×120.png" sizes="120x120">
+  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-120x120.png" sizes="120x120">
   <!-- Chrome Web Store icon -->
   <link rel="icon" type="image/png" href="img/favicon/128x128.png" sizes="128x128">
   <!-- IE10 Metro tile for pinned site if not using "msapplication-TileImage" -->
-  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-144×144.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-144x144.png" sizes="144x144">
   <link rel="icon" type="image/png" href="img/favicon/apple-touch-icon-152x152.png" sizes="152x152">
   <!-- Opera Coast icon -->
   <link rel="icon" type="image/png" href="img/favicon/opera-coast-228x228.png" sizes="228x228">
   <!-- Microsoft Metro tiles -->
   <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-TileImage" content="img/favicon/apple-touch-icon-144×144.png">
+  <meta name="msapplication-TileImage" content="img/favicon/apple-touch-icon-144x144.png">
 
   <link rel="stylesheet" href="css/home.css">
 
@@ -44,6 +44,7 @@
         <a href="#features-anchor" class="nav-link">CONSEGUIMOS</a>
         <a href="#contact-section" class="nav-link nav-contact-link">¿HABLAMOS?</a>
       </nav>
+      <button id="menu-button">Menu</button>
     </article>
   </header>
   <main>
@@ -54,6 +55,10 @@
           <p class="header-text fade-in-up-animation">Has venido buscando diseño, por eso sabemos que te gustaría emprender un viaje hacia un lugar al que aún no has conseguido llegar.</p>
         </div>
       </article>
+      <div id="video_header">
+        <div id="video_content">
+        </div>
+      </div>
     </section>
     <section class="content-section gray-background stripe-background" id="useful-anchor">
       <article class="content-wrapper animated-zone" id="useful-things">
@@ -173,7 +178,7 @@
         </blockquote>
       </article>
     </section>
-    <section class="content-section gray-dark-background stripe-background animated-zone" id="clients-content" data-scroll="400">
+    <section class="content-section gray-dark-background stripe-background animated-zone" id="clients-content">
       <article class="content-wrapper" id="clients">
         <ul class="half-content client-list animated-zone">
           <!-- <li class="zoom-in-animation"><img src="img/clients/adeslas.svg" alt=""></li> -->
@@ -215,56 +220,59 @@
   <footer class="stripe-background"> 
     <article class="content-footer">
       <ul class="contact-list">
-        <li>
+        <li class="logo-contact">
           <img src="img/svg/logo-unexpendables.svg" class="unexpendables-logo" alt="">
         </li>
-        <li>
-          <h3 class="location-name">Bilbao</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Gran Vía Don Diego Lopez de Haro, 81,</p>
-            <p class="location-adress">planta 3, oficina 10</p>
-            <p class="location-adress">48011</p>
-          </address>
+        <li class="adress-contact">
+          <ul class="contact-adresses">
+            <li>
+              <h3 class="location-name">Bilbao</h3>
+              <address class="localtion-info">
+                <p class="location-adress">Gran Vía Don Diego Lopez de Haro, 81,</p>
+                <p class="location-adress">planta 3, oficina 10</p>
+                <p class="location-adress">48011</p>
+              </address>
+            </li>
+            <li>
+              <h3 class="location-name">Madrid</h3>
+              <address class="localtion-info">
+                <p class="location-adress">Claudio Coello, 124,</p>
+                <p class="location-adress">Planta 5,</p>
+                <p class="location-adress">28006</p>
+              </address>
+            </li>
+            <li>
+              <h3 class="location-name">Gijón</h3>
+              <address class="localtion-info">
+                <p class="location-adress">Avda. del Jardín Botánico, 1345.</p>
+                <p class="location-adress">Edif. Grupo Intermark</p>
+                <p class="location-adress">33203</p>
+              </address>
+            </li>
+            <li>
+              <h3 class="location-name">México DF</h3>
+              <address class="localtion-info">
+                <p class="location-adress">Paseo de la Reforma,</p>
+                <p class="location-adress">265, planta 16</p>
+                <p class="location-adress">06500</p>
+              </address>
+            </li>
+          </ul>
         </li>
-        <li>
-          <h3 class="location-name">Madrid</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Claudio Coello, 124,</p>
-            <p class="location-adress">Planta 5,</p>
-            <p class="location-adress">28006</p>
-          </address>
-        </li>
-        <li>
-          <h3 class="location-name">Gijón</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Avda. del Jardín Botánico, 1345.</p>
-            <p class="location-adress">Edif. Grupo Intermark</p>
-            <p class="location-adress">33203</p>
-          </address>
-        </li>
-        <li>
-          <h3 class="location-name">México DF</h3>
-          <address class="localtion-info">
-            <p class="location-adress">Paseo de la Reforma,</p>
-            <p class="location-adress">265, planta 16</p>
-            <p class="location-adress">06500</p>
-          </address>
-        </li>
-
         <li class="rrss-content">
           <ul class="rrss-list">
             <li>
-              <a href="https://twitter.com/unexpendables" class="rrss-links">
+              <a href="https://twitter.com/unexpendables" class="rrss-links" target="_blank">
                 <img src="img/svg/icon-twitter.svg" alt="">
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/unexpendables-s-l-/" class="rrss-links">
+              <a href="https://www.linkedin.com/company/unexpendables-s-l-/" class="rrss-links" target="_blank">
                 <img src="img/svg/icon-linkedin.svg" alt="">
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/unexpendables_design/" class="rrss-links">
+              <a href="https://www.instagram.com/unexpendables_design/" class="rrss-links" target="_blank">
                 <img src="img/svg/icon-instagram.svg" alt="">
               </a>
             </li>
