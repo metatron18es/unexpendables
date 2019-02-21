@@ -245,37 +245,37 @@
         grid-area: gofit;
       }
         .grid-gofit::before {
-          background-image: url(../img/gofit.png);
+          background-image: url(../img/proyects/proyecto-gofit.jpg);
         }
       .grid-caf {
         grid-area: caf;
       }
         .grid-caf::before {
-          background-image: url(../img/caf.png);
+          background-image: url(../img/proyects/proyecto-caf.jpg);
         }
       .grid-bankia {
         grid-area: bankia;
       }
         .grid-bankia::before {
-          background-image: url(../img/bankia.png);
+          background-image: url(../img/proyects/proyecto-bankia.jpg);
         }
       .grid-mundiplan {
         grid-area: mundiplan;
       }
         .grid-mundiplan::before {
-          background-image: url(../img/mundiplan.png);
+          background-image: url(../img/proyects/proyecto-mundiplan.jpg);
         }
       .grid-bbk {
         grid-area: bbk;
       }
         .grid-bbk::before {
-          background-image: url(../img/bbk.png);
+          background-image: url(../img/proyects/proyecto-bbk.jpg);
         }
       .grid-orona {
         grid-area: orona;
       }
         .grid-orona::before {
-          background-image: url(../img/orona.png);
+          background-image: url(../img/proyects/proyecto-orona.jpg);
         }
       .grid-descubre {
         grid-area: descubre;
